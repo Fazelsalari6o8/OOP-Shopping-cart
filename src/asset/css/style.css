@@ -1,0 +1,101 @@
+:root {
+  --color-primary: #293241;
+  --color-secondary: #98c1d9;
+  --color-light: #e0fbfc;
+  --color-error: #ee6c4d;
+
+  --transition-public: all 0.2s ease-in;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, monospace, Tahoma, sans-serif;
+  user-select: none;
+}
+body {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 2.5rem;
+}
+
+/* start main style */
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+/* start products section style */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+#products > div {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 7px 29px 0 rgba(41, 50, 66, 0.2);
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+#products img {
+  width: 300px;
+  border-radius: 25px;
+}
+#products-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-secondary);
+  border-radius: 25px;
+  height: 120px;
+  padding: 25px;
+  margin-top: 30px;
+}
+#products-info h3 {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+#products-info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#products-info span {
+  font-size: 1.1rem;
+  color: var(--color-light);
+}
+#products-info button {
+  background-color: var(--color-light);
+  border: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(41, 50, 66, 0.2);
+  transition: var(--transition-public);
+}
+#products-info button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-radius: 40%;
+}
+/* end products section style */
+/* end main style */
