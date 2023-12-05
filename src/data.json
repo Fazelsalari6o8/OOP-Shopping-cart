@@ -61,12 +61,5 @@
     "price": 5,
     "image": "./asset/images/glue-stick.png",
     "alt": "glue stick product"
-  },
-  {
-    "id": 10,
-    "name": "جامدادی",
-    "price": 8,
-    "image": "https://www.papcoiran.com/15028-superlarge_default/%D8%AC%D8%A7%D9%85%D8%AF%D8%A7%D8%AF%DB%8C-%DA%86%D8%B1%D9%85%DB%8C%D9%86.jpg",
-    "alt": "جامدادی"
   }
 ]
