@@ -1,34 +1,15 @@
 // for Products
 
-class Products {
-  constructor(parent, products, cart) {
-    this.parent = parent;
-    this.products = products;
-    this.cart = cart;
+import Display from "./Display.js";
 
-    this.parent.addEventListener("click", this);
+class Products extends Display {
+  constructor(parent, products, cart) {
+    super(parent, products);
+    this.cart = cart;
   }
 
   showProducts() {
     this.products.forEach((product) => this.createCard(product));
-  }
-
-  createCard(data) {
-    const cardEle = document.createElement("div");
-
-    const imgEle = this.productImg(data);
-    const infoEle = this.productInfo(data);
-
-    cardEle.innerHTML = imgEle;
-    cardEle.innerHTML += infoEle;
-
-    this.parent.appendChild(cardEle);
-  }
-
-  productImg(data) {
-    const { image, alt } = data;
-    const imgJSX = `<img src="${image}" alt="${alt}"/>`;
-    return imgJSX;
   }
 
   productInfo(data) {
