@@ -20,7 +20,7 @@ class Products {
     cardEle.innerHTML = imgEle;
     cardEle.innerHTML += infoEle;
 
-    this.parent.append(cardEle);
+    this.parent.appendChild(cardEle);
   }
 
   productImg(data) {
